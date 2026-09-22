@@ -1,0 +1,1 @@
+0 9 * * * /home/ec2-user/cron_app/venv/bin/python /home/ec2-user/cron_app/fetchers/publish_sns_python.py >> /home/ec2-user/cron_app/logs/publish_sns.log 2>&1

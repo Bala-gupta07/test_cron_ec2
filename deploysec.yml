@@ -1,0 +1,11 @@
+version: 0.1
+
+files:
+  - source: /
+    destination: /home/ec2-user/cron_app
+
+scripts:
+  AfterDeploy:
+    - location: scripts/install.sh
+      timeout: 300
+      runas: root
