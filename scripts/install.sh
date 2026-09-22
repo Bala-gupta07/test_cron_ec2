@@ -21,6 +21,6 @@ mkdir -p "$APP_DIR/logs"
 
 echo "=== Installing cron configuration ==="
 
-crontab -u ec2-user "$APP_DIR/cron/crontab"
+crontab "$APP_DIR/cron/crontab"
 
 echo "=== Deployment completed ==="
