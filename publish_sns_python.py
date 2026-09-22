@@ -3,7 +3,7 @@ import boto3, datetime
 # code to publish a message to an SNS topic
 
 def publish_sns_message(topic_arn, message):
-    sns_client = boto3.client("sns")
+    sns_client = boto3.client("sns", region_name="us-east-1")  # Replace with your desired region
     response = sns_client.publish(
         TopicArn=topic_arn,
         Message=message
